@@ -1,0 +1,32 @@
+# SwiftLint configuration for swift-he-grpc
+# This is a reproduction/demo project, so we relax strict rules
+
+disabled_rules:
+  # Documentation is not critical for a demo/reproduction project
+  - missing_docs
+  # Single-line guard statements are fine and more readable
+  - conditional_returns_on_newline
+  # Type ordering is not critical for this small project
+  - type_contents_order
+  # Direct return is often clearer with intermediate variables for debugging
+  - direct_return
+  # Trailing closures are sometimes less readable
+  - trailing_closure
+  # Allow loop variables like 'i' (common in benchmarking)
+  - identifier_name
+  # Demo code can have longer functions
+  - function_body_length
+  # Demo code can have longer files
+  - file_length
+  # Relaxed line length for long declarations
+  - line_length
+  # Opening brace style is a preference
+  - opening_brace
+  # Trailing comma style varies
+  - trailing_comma
+
+# Exclude generated code and dependencies
+excluded:
+  - .build
+  - swift-homomorphic-encryption
+  - Sources/Shared/Generated

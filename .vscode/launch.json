@@ -1,0 +1,264 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug MinimalReproduction",
+            "target": "MinimalReproduction",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug MinimalReproduction"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release MinimalReproduction",
+            "target": "MinimalReproduction",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release MinimalReproduction"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug HEServer",
+            "target": "HEServer",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug HEServer"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release HEServer",
+            "target": "HEServer",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release HEServer"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug HEClient",
+            "target": "HEClient",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug HEClient"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release HEClient",
+            "target": "HEClient",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release HEClient"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug RESTServer",
+            "target": "RESTServer",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug RESTServer"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release RESTServer",
+            "target": "RESTServer",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release RESTServer"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug RESTClient",
+            "target": "RESTClient",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug RESTClient"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release RESTClient",
+            "target": "RESTClient",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release RESTClient"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug NativeBenchmark",
+            "target": "NativeBenchmark",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug NativeBenchmark"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release NativeBenchmark",
+            "target": "NativeBenchmark",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release NativeBenchmark"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug HESlowdownReproducer",
+            "target": "HESlowdownReproducer",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug HESlowdownReproducer"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release HESlowdownReproducer",
+            "target": "HESlowdownReproducer",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release HESlowdownReproducer"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug HEServerV1",
+            "target": "HEServerV1",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug HEServerV1"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release HEServerV1",
+            "target": "HEServerV1",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release HEServerV1"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug HEClientV1",
+            "target": "HEClientV1",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug HEClientV1"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release HEClientV1",
+            "target": "HEClientV1",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release HEClientV1"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug NativeRESTServer",
+            "target": "NativeRESTServer",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug NativeRESTServer"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release NativeRESTServer",
+            "target": "NativeRESTServer",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release NativeRESTServer"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug NativeRESTClient",
+            "target": "NativeRESTClient",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug NativeRESTClient"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release NativeRESTClient",
+            "target": "NativeRESTClient",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release NativeRESTClient"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug HEWorker",
+            "target": "HEWorker",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug HEWorker"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release HEWorker",
+            "target": "HEWorker",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release HEWorker"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Debug HEServerIsolated",
+            "target": "HEServerIsolated",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug HEServerIsolated"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-he-grpc}",
+            "name": "Release HEServerIsolated",
+            "target": "HEServerIsolated",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release HEServerIsolated"
+        }
+    ]
+}

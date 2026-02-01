@@ -1,0 +1,31 @@
+// HE Benchmark Service Protocol
+// Defines the gRPC service for HE computation benchmarking
+
+syntax = "proto3";
+
+package benchmark;
+
+// Service for HE computation benchmarking
+// Demonstrates the gRPC-Swift 2.x NIO executor slowdown
+service HEBenchmark {
+    // Performs HE computation on encrypted query
+    rpc Compute(BenchmarkRequest) returns (BenchmarkResponse);
+}
+
+// Request message carrying encrypted query and evaluation key
+message BenchmarkRequest {
+    // Serialized encrypted query matrices (one per context)
+    repeated bytes encrypted_query = 1;
+
+    // Serialized evaluation key for HE operations
+    bytes evaluation_key = 2;
+}
+
+// Response message with encrypted result and timing
+message BenchmarkResponse {
+    // Serialized encrypted response from PNNS computation
+    bytes response_data = 1;
+
+    // Server-side HE computation time in milliseconds
+    double compute_time_ms = 2;
+}
