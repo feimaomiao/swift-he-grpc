@@ -4,7 +4,7 @@ We observe a critical performance issue when running Apple's [swift-homomorphic-
 
 ## The Problem
 
-Homomorphic encryption computations experience **100x performance degradation** when executed inside SwiftNIO handler contexts (gRPC, Vapor, Hummingbird, or plain NIO HTTP servers).
+Homomorphic encryption computations experience **100x performance degradation** when executed inside SwiftNIO handler contexts.
 
 | Execution Context | HE Compute Time |
 |-------------------|-----------------|
