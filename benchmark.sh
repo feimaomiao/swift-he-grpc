@@ -203,30 +203,3 @@ kill $SERVER_PID 2>/dev/null || true
 kill $WORKER_PID 2>/dev/null || true
 wait $SERVER_PID 2>/dev/null || true
 wait $WORKER_PID 2>/dev/null || true
-
-echo
-echo
-
-# ============================================
-# Summary
-# ============================================
-echo "============================================="
-echo "BENCHMARK COMPLETE"
-echo "============================================="
-echo
-echo "Summary:"
-echo "  1. NativeBenchmark      - Baseline (~6ms)"
-echo "  2. HESlowdownReproducer - Direct vs NIO comparison"
-echo "  3. HEServer (gRPC 2.x)  - In-process NIO (~500ms - SLOW)"
-echo "  4. HEServerV1 (gRPC 1.x)- In-process NIO (~500ms - SLOW)"
-echo "  5. RESTServer (NIO HTTP)- In-process NIO (~500ms - SLOW)"
-echo "  6. NativeRESTServer     - Network.framework (~6ms - FAST)"
-echo "  7. HEServerIsolated     - gRPC + process isolation (~6ms - FAST)"
-echo
-echo "Key insight:"
-echo "  - In-process NIO: ~500ms (100x slower)"
-echo "  - Process isolation: ~6ms (same as native)"
-echo "  - Network.framework: ~6ms (same as native)"
-echo
-echo "CONCLUSION: SwiftNIO executor context causes the slowdown."
-echo "Solution: Run CPU-intensive async tasks outside NIO context."
