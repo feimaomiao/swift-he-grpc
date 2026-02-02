@@ -107,3 +107,8 @@ Sources/
 
 - macOS 26+ / Swift 6.0+
 - swift-homomorphic-encryption (included as submodule)
+
+
+## Note
+
+All benchmarking is done locally (Macbook Pro M5) 
