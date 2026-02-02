@@ -108,7 +108,3 @@ Sources/
 
 - macOS 26+ / Swift 6.0+
 - swift-homomorphic-encryption (included as submodule)
-
-## License
-
-MIT
