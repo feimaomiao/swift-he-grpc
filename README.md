@@ -1,6 +1,6 @@
 # Swift Homomorphic Encryption: Performance Impact with SwiftNIO
 
-This repository demonstrates a critical performance issue when running Apple's [swift-homomorphic-encryption](https://github.com/apple/swift-homomorphic-encryption) inside SwiftNIO-based servers, and provides working mitigations.
+We observe a critical performance issue when running Apple's [swift-homomorphic-encryption](https://github.com/apple/swift-homomorphic-encryption) inside SwiftNIO-based servers, and provide working mitigations.
 
 ## The Problem
 
@@ -15,7 +15,6 @@ Homomorphic encryption computations experience **100x performance degradation** 
 | gRPC 2.x server (in-process) | 500ms |
 | NIO HTTP server (in-process) | 500ms |
 
-When async HE operations run inside a NIO handler, they inherit the NIO executor context. This causes constant context switching and cache thrashing, resulting in the 100x slowdown.
 
 ## Benchmarks
 
@@ -41,7 +40,7 @@ This repository provides 7 benchmarks to demonstrate and quantify the issue:
 
 ## Mitigations
 
-### 1. Process Isolation (Recommended)
+### 1. Process Isolation 
 
 Run HE computations in a separate worker process that doesn't use NIO:
 
